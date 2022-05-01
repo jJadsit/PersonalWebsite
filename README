@@ -9,4 +9,10 @@ Aside from that I will probably put an About Me page that will talk almost excul
 I'm completely aware the site looks like total garbage right now. I'll pretty it up over the next X days/weeks/months/years.
 
 Running Instructions
-	Open webpages/main_page.html in your preffered browser
+	Clone the Repository into an empty folder on your computer,
+	OR download the website as a .zip from the following google drive link:
+		TODO: make a google drive link
+
+	Open the file
+		webpages/main_page.html
+	in your preffered browser

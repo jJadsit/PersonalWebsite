@@ -1,0 +1,55 @@
+
+:root {
+	--BackgroundColor: #F0EFF4;
+	--PrimaryColor1: #1C3144;
+	--PrimaryColor2: #073B4C;
+	--PrimaryColor3: #118AB2;
+	--ActionColor: #06D6A0;
+	--TransluscentBlueThick: #1C3144AA;
+	--TransluscentWhiteThick: #F0EFF4AA;
+	--TransluscentWhiteThin: #F0EFF444;
+}
+
+body {
+	background-color: var(--BackgroundColor);
+}
+
+a {
+	color: var(--ActionColor);
+}
+
+.PageHeader {
+	background-color: var(--TransluscentBlueThick);
+	text-align: center;
+	padding: 25px;
+	font-size: 35px;
+}
+
+.navBar {
+	background-color:var(--PrimaryColor1);
+	padding: 15px;
+}
+
+.footer {
+	background-color:var(--TransluscentBlueThick);
+	padding: 5px;
+}
+
+.navBarLink {
+	color:blue;
+	background-color:var(--TransluscentWhiteThin);
+	border-width: 2px;
+	border-color: black;
+	padding: 8px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.rectangleCanvas {
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	padding: 30px;
+}

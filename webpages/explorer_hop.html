@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Explorer Hop's Screener</title>
+	<link rel="icon" t type="image/x-con" href="../images/favicon.png">
+	<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+	<header class="PageHeader">
+		<p> Welcome to My Website! </p>
+	</header>
+
+	<nav class="navBar">
+		<span class="navBarLink">
+			<a href="main_page.html" style="text-decoration: none;"> About Me </a>
+		</span>
+
+		<span class="navBarLink">
+			<a href="../OPEN_ME.html" style="text-decoration: none; font-size: 25px;"> Main Page </a>
+		</span>
+
+		<span class="navBarLink">
+			<a href="explorer_hop.html" style="text-decoration: none;"> Explorer Hop</a>
+		</span>
+	</nav>
+
+	<main>
+		<div class="centerContent">
+			<h1> Explorer Hop's Screener Question </h1>
+			<p> Create a rectangle by typing some values into the fields below, then hit the button! </p>
+
+			<label for="input_rect_width"> Rectangle Width (Pixels) </label>
+			<input type="number" name="input_rect_width" id="input_rect_width" min="0">
+			<br><br>
+
+			<label for="input_rect_width"> Rectangle Height (Pixels)  </label>
+			<input type="number" name="input_rect_height" id="input_rect_height" min="0">
+			<br><br>
+
+			<label for="input_rect_color" style="margin-right: 6px;"> Color </label>
+			<input type="Color" name="input_rect_color" id="input_rect_color">
+			<br><br>
+
+			<button id="draw_rect_button" type="submit" onclick="drawCanvas()"> Draw! </button>
+			<br><br>
+
+			<canvas id="rect_canvas" class="rectangleCanvas" width="450px" height="350px">
+				Your Browser dudnt support the canvas. Try using Google Chrome </canvas>
+
+			<br><br>
+
+			<script type="text/javascript">
+				function drawCanvas() {
+					var canvas_ref = document.getElementById("rect_canvas");
+					var ct = canvas_ref.getContext("2d");
+
+					var input_width = document.getElementById("input_rect_width");
+					var input_height = document.getElementById("input_rect_height");
+					var input_color = document.getElementById("input_rect_color");
+				
+					ct.fillStyle = input_color.value;
+					ct.fillRect(0, 0, input_width.value, input_height.value);
+				}
+			</script>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<p> Jonathen J. Adsit <br> jonadsit@outlook.com </p>
+	</footer>
+</body>
+
+</html>
